@@ -40,7 +40,7 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80',
       'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&q=80'
     ],
-    model3dPath: '/models/free_iphone_13_pro_2021.glb',
+    model3dPath: 'models/free_iphone_13_pro_2021.glb',
     specifications: {
       'Display': '6.1" Super Retina XDR OLED',
       'Chip': 'A15 Bionic',

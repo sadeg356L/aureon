@@ -53,7 +53,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-3d">
-            <ThreeDViewer modelPath="/models/free_iphone_13_pro_2021.glb" />
+            <ThreeDViewer modelPath={`${import.meta.env.BASE_URL}models/free_iphone_13_pro_2021.glb`} />
           </div>
         </div>
         <div className="hero-scroll">
@@ -181,7 +181,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="experience-3d">
-              <ThreeDViewer modelPath="/models/laptop.glb" />
+              <ThreeDViewer modelPath={`${import.meta.env.BASE_URL}models/laptop.glb`} />
             </div>
           </div>
         </div>

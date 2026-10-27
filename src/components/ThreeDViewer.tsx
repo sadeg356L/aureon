@@ -13,7 +13,7 @@ interface ModelProps {
 
 function Model({ url, autoRotate = true, autoRotateSpeed = 0.5 }: ModelProps) {
   const group = useRef<Group>(null)
-  const resolvedUrl = url.startsWith('/') ? `${import.meta.env.BASE_URL}${url.slice(1)}` : url
+  const resolvedUrl = url.startsWith('http') ? url : `${import.meta.env.BASE_URL}${url.replace(/^\.\//, '').replace(/^\//, '')}`
   const { scene } = useGLTF(resolvedUrl)
   
   useFrame((state) => {
